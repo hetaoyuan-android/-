@@ -1,0 +1,16 @@
+#上传操作
+
+前端注意
+form表单
+1. method="post"
+2.enctype="multipart/form-data" 把数据转换成二进制流的形式传递数据
+
+后端注意
+	Commons-fileupload
+	Commons-io
+	springMVC核心配置文件当中配置相关上传的操作
+	请注意
+	判断该文件是不是存在
+	获取服务器端的绝对路径-》tomcat的带盘符的绝对路径
+	判断上传的文件夹是否存在
+	完成上传
