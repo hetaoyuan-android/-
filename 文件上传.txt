@@ -9,7 +9,12 @@ form表单
 	Commons-fileupload
 	Commons-io
 	springMVC核心配置文件当中配置相关上传的操作
-	请注意
+	请注意：id的名字是固定的，不能乱取
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonMultipartResolver">
+		<property name="defaultEncoding" value="utf-8"/>
+		<property name="maxUploadSize" value="20971520"/>
+	</bean>
 	判断该文件是不是存在
 	获取服务器端的绝对路径-》tomcat的带盘符的绝对路径
 	判断上传的文件夹是否存在
